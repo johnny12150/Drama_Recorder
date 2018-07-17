@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歡迎申請帳號</title>
+    <style>
+        body {
+            /*background-color: #935d8c;*/
+            /*color: rgba(255, 255, 255, 0.65);*/
+            height: 120vh;
+            background: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+            /* background: -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+            background: -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
+            /* background-repeat: initial; */
+            background-repeat: no-repeat;
+            /*            background-size: cover;*/
+        }
+
+        #main {
+            border-radius: 25px;
+            width: 60%;
+            padding: 3%;
+            margin: 10% auto;
+            background-color: rgba(220, 220, 220, 0.5);
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="class/ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <h3>申請帳號</h3>
+            <br>
+            <form id="form1" name="form1" enctype="multipart/form-data" action="update_finish.php" method="post">
+                <label> 帳號名稱：</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-user"></i>
+                    </div>
+                    <input name="vmName" type="text" id="vmName" placeholder="Name" class="form-control" />
+                </div>
+                <br>
+                <label> 密碼：</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-lock"></i>
+                    </div>
+                    <input name="vmRating" type="text" id="vmRating" placeholder="Rating" class="form-control" />
+                </div>
+                <br>
+                <label> 再次輸入密碼：</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-check"></i>
+                    </div>
+                    <input name="vmDesc" type="text" id="vmDesc" placeholder="再次輸入密碼：" class="form-control" />
+                </div>
+                <br>
+                <label> email：</label>
+                <div class="input-group">
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-envelope"></i>
+                    </div>
+                    <input name="media" type="text" id="pics" class="form-control" />
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success" style="float:right;">申請帳號</button>
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
